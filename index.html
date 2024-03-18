@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestión de tareas</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de gestión de tareas</h1>
+        <input type="text" id="taskInput" placeholder="Agregar nueva tarea">
+        <button onclick="agregarTarea()">Agregar tarea</button>
+        <ul id="taskList"></ul>
+        <div>
+            <label><input type="radio" name="filter" onclick="filtroTarea('all')" checked>Todas</label>
+            <label><input type="radio" name="filter" onclick="filtroTarea('pending')">Pendientes</label>
+            <label><input type="radio" name="filter" onclick="filtroTarea('completed')">Completadas</label>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
